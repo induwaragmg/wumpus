@@ -1,1 +1,1 @@
-score
+print
