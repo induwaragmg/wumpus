@@ -181,7 +181,7 @@ class LogicAgent:
                 self.world.shoot_arrow()
                 self.score -= 10
 
-                # Mark Wumpus cell as safe if it is no longer dangerous
+                # Mark Wumpus cell as safe if it is no longer dangerous if there isnot a pit
                 if not self.world.wumpus_alive:
                     if self.confirmed_wumpus not in self.possible_pits:
                         self.safe_cells.add(self.confirmed_wumpus)
